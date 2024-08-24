@@ -5,6 +5,7 @@ f initialize
         @usuarios = []
         @saldo = 100 #cada usuário iniciará com um saldo de 100 reais
         bem_vindo
+        puts "olá " 
     end
 
     def bem_vindo
