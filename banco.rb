@@ -1,11 +1,10 @@
 require_relative 'pessoa'
 
 class Banco
-f initialize
+    def initialize
         @usuarios = []
         @saldo = 100 #cada usuário iniciará com um saldo de 100 reais
         bem_vindo
-        puts "olá " 
     end
 
     def bem_vindo
@@ -25,17 +24,14 @@ f initialize
 
     def opcoes
         puts "Olá! Você está na aba de criação de conta."
+
         loop do
             puts "\nDigite 1 para criar conta ou 0 para sair."
-
             puts "Digite 2 para consultar dados" unless @usuarios.empty?
             resp = gets.chomp.to_i
             case resp
-            
             when 1
-                #poderia ter uma função entrada_dados_conta
                 entrada_dados_conta
-            
             when 2
                 if @usuarios.empty?
                     puts "Vá criar uma conta, rapá -_- "
@@ -85,9 +81,7 @@ f initialize
             puts "Usuário não encontrado."
         end
     end
-
     
-
 end
 
 banco = Banco.new

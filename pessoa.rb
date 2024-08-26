@@ -20,4 +20,3 @@ meu_hash.each do |chave, valor|
   puts "A posição #{chave} guarda o valor #{valor}"
 end
 =end
-de
