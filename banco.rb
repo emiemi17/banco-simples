@@ -81,7 +81,7 @@ class Banco
             puts "Usuário não encontrado."
         end
     end
-    
+
 end
 
 banco = Banco.new
